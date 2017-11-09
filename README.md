@@ -2,8 +2,18 @@
 
 ## Workgroup Member
 
+### OIH APIs
+
+### (Secure) Access Control
+
+### Repository (Management)
+
+### Message Processing
+
+### Additional Services
+
 ## Workgroups
 
-In the following all microservice relating workgroups are described.
+The following illustrations show how the microservices are aggregated within the workgroups.
 
-![Microservice Workgroups](https://github.com/openintegrationhub/Microservices/blob/master/Sources/OIH%20Workgroups.png)
+![Microservice Workgroups](https://github.com/openintegrationhub/Microservices/blob/master/Images/OIH%20Microservice%20assignment.png)
