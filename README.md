@@ -1,8 +1,8 @@
 # Introduction
 
-- Each workgroup has one leader. This leader is elected every 6 month by all decision makers whitin the workgroup.,
-- The decisions for the workgroups are made by the decision makers within the specific workgroup.
 - Each workgroup has at least one status call every two weeks.
+- Each workgroup has one leader. This leader is elected every 6 month by all decision makers whitin the workgroup.
+- Decisions within a workgroups are made by the decision makers.
 
 ## Workgroup Member
 
