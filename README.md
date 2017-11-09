@@ -38,4 +38,4 @@
 
 The following illustrations show how the microservices are aggregated within the workgroups.
 
-![Microservice Workgroups](https://github.com/openintegrationhub/Microservices/blob/master/Images/OIH%20Workgroup%20Content.png)
+![Microservice Workgroups](https://github.com/openintegrationhub/Microservices/blob/master/Images/OIH%20Workgroups.png)
