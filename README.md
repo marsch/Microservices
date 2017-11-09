@@ -6,4 +6,4 @@
 
 In the following all microservice relating workgroups are described.
 
-![Microservice Workgroups](Placeholder)
+![Microservice Workgroups](https://github.com/openintegrationhub/Microservices/tree/master/Sources)
