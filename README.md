@@ -47,4 +47,4 @@ The following illustrations show how the microservices are aggregated within the
 
 ## Contribution
 
-Before you contribute, please read the [contribution guideline](https://github.com/openintegrationhub/microservices/blob/master/CONTRIBUTING.md#creating-an-issue).
+Before you contribute, please read the [contribution guideline](https://github.com/openintegrationhub/microservices/blob/master/CONTRIBUTING.md).
