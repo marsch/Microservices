@@ -7,7 +7,7 @@
 - Decisions within a workgroup are made by the Committers on democratic basis (unanimity)
 - Contributors contribute to the projects but do not have a vote
 - Contributors can apply to get a vote and become a Committer
-- Committer pick Contributors to become Committers
+- Committer pick Contributors to become Committers (Committees have to agree)
 
 ## Workgroup Member
 
@@ -39,7 +39,7 @@
 |  | Name  | Committer  |
 |  | Name  | Contributor  |
 
-## Workgroups
+## Workgroup Content
 
 The following illustrations show how the microservices are aggregated within the workgroups.
 
