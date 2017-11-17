@@ -44,7 +44,7 @@
 |  | Philipp  | Committer  |
 |  | Shterion  | Contributor  |
 |  | Hansjörg  | Contributor  |
-| Additional Services | Selim  | **Committer & Lead**  |
+| Management Services | Selim  | **Committer & Lead**  |
 |  | Igor  | Committer  |
 |  | Lutz  | Committer  |
 |  | Philipp  | Committer  |
