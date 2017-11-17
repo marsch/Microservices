@@ -22,31 +22,33 @@
 
 | Workgroup  | Member Name | Role |
 | ------------- | ------------- | ------------- |
-| OIH APIs  | Name  | **Committer & Lead**  |
-|  | Name  | Committer  |
-|  | Name  | Contributor  |
-| (Secure) Access Control | Name  | **Committer & Lead**  |
-|  | Name  | Committer  |
-|  | Name  | Committer  |
-|  | Name  | Contributor |
-|  | Name  | Contributor  |
-|  Repository (Management)| Name  | **Committer & Lead**  |
-|  | Name  | Committer |
-|  | Name | Committer  |
-|  | Name  | Contributor  |
-|  | Name | Contributor  |
-|  | Name  | Contributor  |
-|  | Name  | Contributor  |
-| Message Processing | Name  | **Committer & Lead**  |
-|  | Name  | Committer  |
-|  | Name  | Committer  |
-|  | Name  | Committer  |
-|  | Name  | Committer  |
-| Additional Services | Name  | **Committer & Lead**  |
-|  | Name  | Committer  |
-|  | Name  | Committer  |
-|  | Name  | Committer  |
-|  | Name  | Contributor  |
+| OIH APIs  | Igor  | **Committer & Lead**  |
+|  | Selim  | Committer  |
+|  | Philipp  | Committer  |
+| (Secure) Access Control | Selim  | **Committer & Lead**  |
+|  | Lutz  | Committer  |
+|  | Igor  | Committer  |
+|  | Philipp  | Committer |
+|  | Falk  | Contributor  |
+|  | Hans  | Contributor  |
+|  Repository (Management)| Igor  | **Committer & Lead**  |
+|  | Lutz  | Committer |
+|  | Selim | Committer  |
+|  | Susanne  | Committer  |
+|  | Philipp | Committer  |
+|  | Shterion  | Contributor  |
+|  | Hansjörg  | Contributor  |
+| Message Processing | Igor  | **Committer & Lead**  |
+|  | Selim  | Committer  |
+|  | Susanne  | Committer  |
+|  | Philipp  | Committer  |
+|  | Shterion  | Contributor  |
+|  | Hansjörg  | Contributor  |
+| Additional Services | Selim  | **Committer & Lead**  |
+|  | Igor  | Committer  |
+|  | Lutz  | Committer  |
+|  | Philipp  | Committer  |
+|  | Shterion  | Contributor  |
 
 ## Workgroup Content
 
