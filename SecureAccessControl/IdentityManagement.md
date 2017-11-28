@@ -30,7 +30,7 @@
  Tenant (or tenant admin) have access to tenant resources and can grant access to a connector via OIH to read/write to these resources.
  Example: tenant can grant access to an ISV connector C1 read and write access to it's customer data and another ISV Connector C2 only read access. These access grants are required to define an integration flow of customer data from C1 to C2.
 
- ![Tenant Identities](identites-linked.png)
+ ![Tenant Identities](assets/identites-linked.png)
 
 
 
@@ -53,7 +53,7 @@
 
  Following figure illustrates the services and the identities/service accounts.
 
- ![Service Accounts](identites-oih.png)
+ ![Service Accounts](assets/identites-oih.png)
 
 
  Another case of identities in use is when a `Connector` requires authorization for a vendor backend. Assuming an ISV named ACME Inc. has an RESTful API with OAuth 2.0 support. ACME creates a Connector. For every REST call the connector has to provide a valid access token for the associated tenant account. Given that a connector has no persistence, such tokens and other authentication/authorization mechanisms can be stored and provided from OIH. A possible workflow might be as follows:
