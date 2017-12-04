@@ -1,33 +1,46 @@
 # Api Gateway
 
-This document describes the evaluation of Api Gateways within the Open Integration Hub.
+This document describes the evaluation of API Gateways within the Open Integration Hub.
 
 ## Why is Api Gateways necessary?
 
-it's common practice to have only 1 Endpoint in each Client. That helps to redeploy and changes Api's without downtime or Client release. 
+Some of the advantages of API gateways are:
+* Have a unified public API so that client only have to manage few endpoints
+* Manage authentication/authorization through API Gateway
+* Caching and circuit breaker
+* etc
 
 
 ## Types of API Gateway architecture
 
-there are 2 different Type's of API Gateways. Which are simply the same as a Proxy  from/to a Service. 
+There are 2 different types of API Gateways. Generally speaking, in both cases the API Gateway functions as a proxy to other services.
 
-### Type1: ###
-common usage (simply 1 Proxy for all API requests) the job is only to abstract the over Api's behind. That kind of Api Gateway could be handled from nearly every Proxy you could imagine (Apache, Nginx, Varnish ...)
+### Type1: Simple API Gateway ###
+Common usage: simply 1 Proxy for all API requests. A simple API Gateway only abstracts/masks the APIs behind it. This type of API Gateway can be implemented by nearly every proxy you could imagine (Apache, Nginx, Varnish ...)
 
-![ApiGateway1](https://github.com/openintegrationhub/Microservices/blob/master/SecureAccessControl/assets/ApiGateway1.png)
+![ApiGateway1](assets/ApiGateway1.png)
 
-Pros: easy to manage, in a Kubernetes Cluster a Ingress Controller could do that job.,  small footprint and easy to scale.
-Cons: there is a need for the things the Fat Gateway could do which needs to be implemented on Service side or like Caching handled via CDN ...
+**Pros**: 
+* Easy to manage in a Kubernetes Cluster. An Ingress Controller could do that job
+* Small footprint and easy to scale
 
-### Type2: ###
+**Cons**: 
+* Additional features e.g. caching (CDN), authentication must be implemented in additional services
 
-i would call it Fat Api Gateway. It could do more than just Proxy request like Authentication, Autorisation, WAF Functions, Caching. that is just an Extension to what the common type can do so the normal Proxy is still needed.
+
+### Type2: Fat API Gateway ###
+
+This gateway could do more than just proxy requests. For instance, it could support Authentication, Autorisation, WAF Functions, Caching. One could take existing proxy solutions and extend them with additional modules.
 Exampels: Nginx Plus, Varnish, Kong, apiumbrella, Tyk
 
-![ApiGateway2](https://github.com/openintegrationhub/Microservices/blob/master/SecureAccessControl/assets/ApiGateway2.png)
+![ApiGateway2](assets/ApiGateway2.png)
 
-Pros: a lot of features (Cache, Auth, Autor. , WAF)
-Cons: most of the Examples are not Open Source, a need for Know how for management
+**Pros**: 
+* A lot of features are already implemeted (Cache, Auth, Autor. , WAF)
+
+**Cons**: 
+* Most of the examples are not Open Source
+* Higher complexity which requires Know how for management
 
 
 ## Link Collection
@@ -43,4 +56,6 @@ Cons: most of the Examples are not Open Source, a need for Know how for manageme
 
 ## Challenges
 
-1.  the Type and or component to choose depends on what is more possible to        achieve. implementation of needed features or managing a 3rd Party Software. 
+1. Depending on the security strategy of the cluster, one could either delegate the authentication to the API Gateway and making the communication within the cluster a trusted environment. Another option is to validate authentication on each request, e.g. having a central authentication service which can be asked at any given time if the request token is valid.
+
+2. If a Fat API Gateway is used, should the features be part of the software, can 3rd party modules be used or should these be implemented by the team?
