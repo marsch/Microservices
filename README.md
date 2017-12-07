@@ -32,6 +32,8 @@
 
 ## Workgroup Member
 
+**Workgroup overarching manager:** Igor Drobiazko
+
 | Workgroup  | Member Name | Role |
 | ------------- | ------------- | ------------- |
 | OIH APIs  | Igor  | **Manager & Committer**  |
