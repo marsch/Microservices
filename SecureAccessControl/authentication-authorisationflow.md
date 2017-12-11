@@ -4,27 +4,31 @@
 
 ### Authorisation ###
 
-* [Oauth2](https://aaronparecki.com/oauth-2-simplified/)   
-Authentication Service is generating Tokens and is also the Endpoint to validate the Token. Used Technologie is Oauth2.  
-Pros: One Service to do all the Authentication related work (no shares of Key's or Persistence)  
-Cons: Single Point of failure, higher Network Traffic load for Communication
+#### [Oauth2](https://aaronparecki.com/oauth-2-simplified/)   
+Authentication Service generates Tokens and can also validate them. 
+Pros: One Service to do all the authorization related work (no shared keys between services or Persistence)  
+Cons: Single Point of failure, higher Network Traffic load for communication
 
-* [Oauth2 with JWT](https://jwt.io/introduction/)  
-Authentication Service is generating Tokens (example: JWT)  and the validation is done from each service. Used Technologie is Oauth2 with JWT  
-Pros: split workload and reduce Network Traffic  
-Cons: there is a shared Lib and a shared Secret which needs to be maintained
+#### [Oauth2 with JWT](https://jwt.io/introduction/)  
+Authentication Service generates Tokens (example: JWT)  and the validation is done by each service.  
+
+**Pros**:   
+* split workload and reduce Network Traffic  
+
+Cons: 
+* there is a shared Lib and a shared Secret which needs to be maintained. A non-backwards compatible change may require restarting all affected services.
 
 ### Authentication ###
 
 * [OpenID Connect](http://openid.net/connect/)  
 Protocoll Suite for Authentication & SSO based on OAuth2.0  
-Pros: Small payload, highly optimised for WEB Applications  
+Pros: Small payload, highly optimised for WEB applications  
 Cons: Authorisation is handeled by OAuth2.0 (you need OpenID Connect and OAuth2.0)
 
 ### Authorisation & Authentication ###
 
 * [SAMl2.0](http://saml.xml.org/saml-specifications)  
-XML based Standard for exchange Authentication & Authorisation Data to archive Single Sign On (SSO), Federation and Identity Management  
+XML based Standard for exchange Authentication & Authorisation Data, to archive Single Sign On (SSO), Federation and Identity Management  
 Pros: data transfer is free to use (SOAP, HTTP, JMS ...), combine both Authentication and Authorisation  
 Cons: XML payload (assertions) very Big
 
@@ -36,7 +40,7 @@ Cons: XML payload (assertions) very Big
 
 2. Authorisation from APIs
 
-* for that case it's common practice to use OAuth2.0 and if the environment is APP or WebApp also in combination with JWT 
+* it is common practice to use OAuth2.0 in combination with JWT 
 
 ## Link Collection
 
