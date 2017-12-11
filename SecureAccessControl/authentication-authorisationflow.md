@@ -5,9 +5,11 @@
 ### Authorisation ###
 
 #### [Oauth2](https://aaronparecki.com/oauth-2-simplified/)   
-Authentication Service generates Tokens and can also validate them. 
-Pros: One Service to do all the authorization related work (no shared keys between services or Persistence)  
-Cons: Single Point of failure, higher Network Traffic load for communication
+
+Authentication Service generates Tokens and can also validate them.  
+
+**Pros**:   One Service to do all the authorization related work (no shared keys between services or Persistence)  
+**Cons**: Single Point of failure, higher Network Traffic load for communication
 
 #### [Oauth2 with JWT](https://jwt.io/introduction/)  
 Authentication Service generates Tokens (example: JWT)  and the validation is done by each service.  
