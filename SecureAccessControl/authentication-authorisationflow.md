@@ -2,7 +2,7 @@
 
 
 ## Authorisation ##
----
+
 
 #### [Oauth2](https://aaronparecki.com/oauth-2-simplified/)  
 Authentication Service generates Tokens and can also validate them.  
@@ -15,6 +15,7 @@ Authentication Service generates Tokens and can also validate them.
 * Single Point of failure
 * higher Network Traffic load for communication
 
+---
 
 #### [Oauth2 with JWT](https://jwt.io/introduction/)  
 Authentication Service generates Tokens (example: JWT)  and the validation is done by each service.  
@@ -28,7 +29,7 @@ Authentication Service generates Tokens (example: JWT)  and the validation is do
 
 
 ## Authentication ##
----
+
 #### [OpenID Connect](http://openid.net/connect/)  
 Protocoll Suite for Authentication & SSO based on OAuth2.0  
 
@@ -40,7 +41,7 @@ Protocoll Suite for Authentication & SSO based on OAuth2.0
 
 
 ## Authorisation & Authentication ##
----
+
 
 #### [SAMl2.0](http://saml.xml.org/saml-specifications)  
 XML based Standard for exchange Authentication & Authorisation Data, to archive Single Sign On (SSO), Federation and Identity Management  
@@ -53,7 +54,7 @@ XML based Standard for exchange Authentication & Authorisation Data, to archive 
 * XML payload (assertions) very Big
 
 ## Usecases and Findings ##
----
+
 
 ### Authentication and Authorisation from enduser  
 
@@ -64,7 +65,7 @@ XML based Standard for exchange Authentication & Authorisation Data, to archive 
 * it is common practice to use OAuth2.0 in combination with JWT 
 
 ## Link Collection
----
+
 [Modern Authentication flows](https://nordicapis.com/how-to-control-user-identity-within-microservices/)  
 [Kubernetes how too Authenticate](https://medium.com/jeroen-rosenberg/from-monolith-to-microservice-architecture-on-kubernetes-part-2-authentication-with-jwt-934ea030923)  
 [Differents between SAML & OpenID Connect](https://www.gluu.org/blog/oauth-vs-saml-vs-openid-connect/)  
