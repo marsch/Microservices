@@ -2,14 +2,14 @@
 # Access Control Management
 
 ## Summary
-this is a summary about all different types of Access Control and illustrates the Pros & Cons of access control models which are suitable for OIH. Literature links will be provided at the end of the page. For every IAM system the Access Control is a crucial part beside the Identity Management (User Management). 
+This is a summary about all different types of Access Control and illustrates the Pros & Cons of access control models which are suitable for OIH. Literature links will be provided at the end of the page. For every IAM system the Access Control is a crucial part beside the Identity Management (User Management). 
 
 **Access Control delivers four services**
 
-* authorization
-* authentication
-* access approval
-* accountability
+* Authorization
+* Authentication
+* Access approval
+* Accountability
 
 
 ## Access Control Models
@@ -46,13 +46,13 @@ In this Document we will focus on models which are common in Microservices and W
 
 This Model uses individual designed roles to decide about access. The design of the roles requires a fundamental analysis of the target organization and/or use cases.
 
-For Example a normal Organization structure (simplified without hierarchy for example purpose):  C-Level, Sales, Controlling, User, Administrator
+For Example a normal organization structure (simplified without hierarchy for example purpose):  C-Level, Sales, Controlling, User, Administrator
 
 **Advantages**:
 
-* easy to map Org structure to Access Roles
-* well known handling in use and administration
-* widespread usage 
+* Easy to map Org structure to Access Roles
+* Well known handling in use and administration
+* Widespread usage 
 
 **Disadvantages**:
 
@@ -82,13 +82,13 @@ This model is based on policies which are related on combined attributes (Subjec
 
 **Advantages**:
 
-* easy to map Org structure to attributes
-* widespread usage in modern technologies
+* Easy to map Org structure to attributes
+* Widespread usage in modern technologies
 * Multi-tenancy could be handled via attributes
 
 **Disadvantages**:
 
-* more complex implementation because of decision making to gather infomation
+* More complex implementation because of decision making to gather infomation
  
  
 Links to Literature
