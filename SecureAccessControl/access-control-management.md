@@ -25,8 +25,8 @@ Basic (Department of Defense 1960 / 1970):
 
 * RBAC (Role Based Access Control)
 * ABAC (Attribute Based Access Control)
-* * policy-based access control (PBAC)
-* * claims-based access control (CBAC)
+    * policy-based access control (PBAC)
+    * claims-based access control (CBAC)
 * IBAC (Identity Based Access Control)
 
 **Specials**:
