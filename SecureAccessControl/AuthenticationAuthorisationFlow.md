@@ -13,7 +13,7 @@ Authentication Service generates Tokens and can also validate them.
 
 **Cons**:  
 * Single Point of failure
-* higher Network Traffic load for communication
+* Higher Network Traffic load for communication
 
 ---
 
@@ -21,17 +21,17 @@ Authentication Service generates Tokens and can also validate them.
 Authentication Service generates Tokens (example: JWT)  and the validation is done by each service.  
 
 **Pros**:   
-* split workload and reduce Network Traffic  
+* Split workload and reduce Network Traffic  
 
 **Cons**: 
-* there is a shared Lib and a shared Secret which needs to be maintained.
+* There is a shared Lib and a shared Secret which needs to be maintained.
 * A non-backwards compatible change may require restarting all affected services.
 
 
 ## Authentication ##
 
 #### [OpenID Connect](http://openid.net/connect/)  
-Protocoll Suite for Authentication & SSO based on OAuth2.0  
+Protocol Suite for Authentication & SSO based on OAuth2.0  
 
 **Pros**:
 * Small payload, highly optimised for WEB applications
@@ -47,22 +47,22 @@ Protocoll Suite for Authentication & SSO based on OAuth2.0
 XML based Standard for exchange Authentication & Authorisation Data, to archive Single Sign On (SSO), Federation and Identity Management  
 
 **Pros**:
-* data transfer is free to use (SOAP, HTTP, JMS ...)
-* combine both Authentication and Authorisation
+* Data transfer is free to use (SOAP, HTTP, JMS ...)
+* Combine both Authentication and Authorisation
 
 **Cons**:
-* XML payload (assertions) very Big
+* XML payload (assertions) very big
 
 ## Usecases and Findings ##
 
 
 ### Authentication and Authorisation from enduser  
 
-* that case is not a part from OIH because only APIs are communicating
+* That case is not a part from OIH because only APIs are communicating
 
 ### Authorisation from APIs
 
-* it is common practice to use OAuth2.0 in combination with JWT 
+* It is common practice to use OAuth2.0 in combination with JWT 
 
 ## Link Collection
 
@@ -73,4 +73,4 @@ XML based Standard for exchange Authentication & Authorisation Data, to archive 
 
 ## Challenges
 
-1.  the Type and or component to choose depends on what is more possible to achieve. implementation of needed features or managing a 3rd Party Software. 
+1.  The Type and or component to choose depends on what is more possible to achieve. implementation of needed features or managing a 3rd Party Software. 
