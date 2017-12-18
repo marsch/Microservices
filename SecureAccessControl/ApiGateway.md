@@ -2,7 +2,7 @@
 
 This document describes the evaluation of API Gateways within the Open Integration Hub.
 
-## Why is Api Gateways necessary?
+## Why are Api Gateways necessary?
 
 Some of the advantages of API gateways are:
 * Have a unified public API so that client only have to manage few endpoints
