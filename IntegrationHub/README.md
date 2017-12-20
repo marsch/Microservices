@@ -11,6 +11,9 @@ component, including the component's code, a runtime, libraries and dependencies
 
 ## Communication Router
 
+The communication router is used to expose externally-reachable URLs for integration flows that can be used to implement
+webhook-triggered flows. See more details on [Communication Router](./CommunicationRouter.md).
+
 ## Scheduler and Resource Coordinator
 ## Logging & Monitoring
 ## Message Oriented Middleware
