@@ -1,4 +1,4 @@
-# Identity Management
+# Identity Access Management
 
  This document describes the evaluation of identity and access management within the Open Integration Hub.
 
