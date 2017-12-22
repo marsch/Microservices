@@ -31,7 +31,8 @@ notifications to. See more details on [Communication Router](./CommunicationRout
 
 ## Logging & Monitoring
 
-TBD
+Integration Hub micro-services and integration flows are running in a Kubernetes
+cluster. Read details on [cluster-level logging architectures](./LoggingMonitoring.md).
 
 ## Message Oriented Middleware
 
