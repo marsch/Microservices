@@ -83,12 +83,12 @@ This will lead to the following use cases:
 | **Basic Workflow:** | 1. Define user <br/> 2. Define flow <br/> 3. Retrieve flow  |
 | **Alternative Workflow:** | 1a. User is unknown 2a. Incorrect flow defined <br/> 3a. Throw error   |
 
-As described in the document [SecureAccessControl/Identity Management.md](../SecureAccessControl/IdentityManagement.md)
+As described in the document identity management (s. [SecureAccessControl/Identity Management.md](../SecureAccessControl/IdentityManagement.md))
 the OIH consists of multiple services and agents with different roles and authorization. These roles and their authorizations have to be considered.
 
 ## 3. Concept of the Integration Content Repository
 
-As described in the document [/IntegrationServices.md](../IntegrationServices.md)
+As described in the document integration services (s. [/IntegrationServices.md](../IntegrationServices.md))
 the Integration Content Repository is positioned between the Scheduler and the Resource Coordinator.
 
 The Scheduler helps to perform the polling of the integration flows periodically.
