@@ -7,7 +7,7 @@
 
 The integration components are lightweight and stand-alone Docker images that include everything needed to run the
 component, including the component's code, a runtime, libraries and dependencies. The component images are stored in an
-integration component respository (s. [RepositoryManagement/Integration Component Repository](RepositoryManagement/IntegrationComponentRepository.md)).
+integration component repository (s. [RepositoryManagement/Integration Component Repository](RepositoryManagement/IntegrationComponentRepository.md)).
 
 ## Scheduler and Resource Coordinator
 
