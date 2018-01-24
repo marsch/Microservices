@@ -39,6 +39,7 @@
 | OIH APIs  | Igor  | **Manager & Committer**  |
 |  | Selim  | Committer  |
 |  | Philipp  | Committer  |
+|  | Pavel | Contributor
 | (Secure) Access Control | Selim  | **Manager & Committer**  |
 |  | Lutz  | Committer  |
 |  | Igor  | Committer  |
@@ -52,17 +53,20 @@
 |  | Philipp | Committer  |
 |  | Shterion  | Contributor  |
 |  | Hansjörg  | Contributor  |
+|  | Pavel | Contributor
 | Message Processing | Igor  | **Manager & Committer**  |
 |  | Selim  | Committer  |
 |  | Susanne  | Committer  |
 |  | Philipp  | Committer  |
 |  | Shterion  | Contributor  |
 |  | Hansjörg  | Contributor  |
+|  | Pavel | Contributor
 | Management Services | Selim  | **Manager & Committer**  |
 |  | Igor  | Committer  |
 |  | Lutz  | Committer  |
 |  | Philipp  | Committer  |
 |  | Shterion  | Contributor  |
+|  | Pavel | Contributor
 
 ## Workgroup Content
 
