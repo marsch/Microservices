@@ -68,6 +68,8 @@
 |  | Philipp  | Committer  |
 |  | Shterion  | Contributor  |
 |  | Pavel | Contributor |
+|  | Falk  | Contributor  |
+|  | Hans  | Contributor  |
 
 ## Workgroup Content
 
