@@ -73,7 +73,7 @@ The precise role definitions of OIH may change at a later stage, for the sake of
 *   Organization-Admin can do everything what Organization-Users can do, plus manage her organization data and Organization-Users (invite, change role, remove from organization)
 
   
-![Users and Identities in OIH](./assets/users_in_oih.png)
+![Users and Identities in OIH](./Assets/users_in_oih.png)
 
 
 User management
@@ -90,7 +90,7 @@ Authentication and authorization flows
 
 The following diagram visualizes a simple authentication flow from a client perspective.
 
-![Authentication in OIH](./assets/oihIamConcept.png)
+![Authentication in OIH](./Assets/oihIamConcept.png)
 
   
 
@@ -218,7 +218,7 @@ IAM in context of OIH and microservices
 
 In a microservice architecture like the OIH a client (or a service on behalf of a user) can communicate to multiple other services. In terms of multi-tenancy, we require a sophisticated authorization, for example allowing access only to those integration flows and credentials the current user is actually eligibile for. As described in the basic scenario, our approach is to make use of signed JWT tokens containing the claims/grants of the user/client. The following example illustrates the access to credentials store.
 
-![Authentication in OIH](./assets/authorization_types.png)
+![Authentication in OIH](./Assets/authorization_types.png)
 
 Flow:
 
@@ -257,7 +257,7 @@ In this section we will define a concept for user authentication to OIH inside 
 
 ### Authentication Flow
 
-![Authentication in OIH](./assets/Authentication-steps.png)
+![Authentication in OIH](./Assets/Authentication-steps.png)
 
   
 
