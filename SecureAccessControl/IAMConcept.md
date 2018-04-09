@@ -251,33 +251,76 @@ There are scenarios, for example in context of the Basaas marketplace, where we 
 Authentication in the context of a generic ecosystem
 ----------------------------------------------------
 
-In this section we will define a concept for user authentication to OIH inside a generic ecosystem. It utilizes OpenID Connect ([http://openid.net/specs/openid-connect-core-1_0.html](http://openid.net/specs/openid-connect-core-1_0.html)) which extends the OAuth2 protocol ([https://tools.ietf.org/html/rfc6749](https://tools.ietf.org/html/rfc6749)). The core idea is to just authenticate the user and separate this process from authorization.
+In this section we will define a concept for user authentication to OIH inside a generic ecosystem. It utilizes OpenID Connect (http://openid.net/specs/openid-connect-core-1_0.html) which extends the OAuth2 protocol (https://tools.ietf.org/html/rfc6749). The core idea is to just authenticate the user and separate this process from authorization.
 
   
-
 ### Authentication Flow
 
 ![Authentication in OIH](./Assets/Authentication-steps.png)
 
-  
-
 This abstract flow illustrates the interaction between the three roles and includes the following steps:
 
-  
+(precondition) A registered account containing a valid OIH-uid is required.
 
-(precondition) A registered account containing a valid OIH-uid is required. A registration can be accomplished in different ways and is beyond the scope of this section.
+(A) A User requests access to OIH in order to interact via interface. Since OIH is Relying Party (http://openid.net/specs/openid-connect-core-1_0.html#Authentication) it is initializing OpenID Connect flow. 
 
-(A) User requests an action. For example a request can be made to reorganize clients or to connect a new one. Since OIH is Relying Party ([http://openid.net/specs/openid-connect-core-1_0.html#Authentication](http://openid.net/specs/openid-connect-core-1_0.html#Authentication)) it starts authenticating the User by initializing OpenID Connect flow. 
+(B) OIH sends an authentication request (AuthN) to specified OpenID Provider (OP). The HTTP request parameter "response\_type" holds "id\_token token", so it corresponds to implicit flow according to the specifications (http://openid.net/specs/openid-connect-core-1_0.html#id_tokenExample).
 
-(B) OIH sends an authentication request (AuthN) to specified OpenID Provider. The HTTP request parameter "response\_type" has value "id\_token", so it corresponds to implicit flow according to the specifications ([http://openid.net/specs/openid-connect-core-1\_0.html#id\_tokenExample](http://openid.net/specs/openid-connect-core-1_0.html#id_tokenExample)).
+Example request
 
-(C) If User is not already authenticated, he will be forwarded to a specific login page.
+*(values need to be url encoded)*
+```
+https://127.0.0.1:3002/op/auth?
+client_id=react&
+redirect_uri=https%3A%2F%2F127.0.0.1%3A3000%2Fcallback&
+response_type=id_token%20token& 
+scope=openid%20email& 
+state=716195036c014abaace6ff4b7e3df427& 
+nonce=ea0da03dddf7453f9ad1e3c01c01df2e
+```
 
-(D)Once he logged in and has been authenticated, the OpenID Provider creates Id-token (JWT) and redirects User to OIH with token stored in the HTTP header.
+(C) If this auth request is verified by OP, the User will be forwarded to login page. After he entered sufficient credentials, OP authenticates him.
 
-(E*) After Id-token signature is validated User is authenticated and OIH computes initial request (A)..
+(D) Once he is logged in and has been authenticated locally, the OP creates id token (JWT) and request token. Thereafter OP signs the id token and redirects the User back to OIH with both tokens stored in redirect URIs fragment (http://openid.net/specs/openid-connect-implicit-1_0.html#ImplicitCallback).
 
-  
+Example redirect URI
 
-This authentication flow brings several benefits. It relies on established standards so a future implementation will be covered by detailed documentation. In addition, Users get an interface that should already be known to them, since large providers (e. g. maintained by Google or Facebook) have been around for a couple of years.
+```
+https://127.0.0.1:3000/callback #
+id_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InIxTGtiQm8zOTI1UmIyWkZGckt5VTNNVmV4OVQyODE3S3gwdmJpNmlfS2MifQ.eyJzdWIiOiI1YWI5MThmMjA0NDI1NGNjYjM2MjM0NDQiLCJlbWFpbCI6ImFkbWluQGJhc2Fhcy5jb20iLCJub25jZSI6ImVhMGRhMDNkZGRmNzQ1M2Y5YWQxZTNjMDFjMDFkZjJlIiwic2lkIjoiZTA5YjI2N2EtMDk2Yi00YWMxLTg2NjAtNTU0NzY3OWE2YmY0IiwiYXRfaGFzaCI6IjRCTi1YT1R2VzdtSGRDUndTOTNqSVEiLCJzX2hhc2giOiJMY3dYbXNEM1lvbTRvZnRmSzJsSXFRIiwiYXVkIjoicmVhY3QiLCJleHAiOjE1MjMyODU5OTIsImlhdCI6MTUyMzI4MjM5MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDozMDAyIn0.BsYNuSFjIkg0SnNq6Euvsm6D-x5pQL29crHX0ol0_bHHi3Eh9ObCQ2Zd-LpJAGcw8vudXNBeCshihlSCAFuD94Zl7Vv9L5YYltL94-20knd8kXGq9-5vTn-LuJe8y64P558qHEFnlD4pCu9MOv6iwjCAxYoAZJhaq3Mr5ZT3dP6w49U0H9Va0fVNPDaqq-US1ILHI9uQCKrtWPZb_G-InTOZ8Gt7z7ib7Oq7tEgCShnwZ7XQdejuJmuiyK7be0gzqkb0I-0DOOKY2QWMgLB1araGPx9FIZCRuqJsdV5GJqxCNGGmEM_o8ys26UJFZgBZ6wa4LnV1CmUdoUNyJF6Y6A&
+access_token=MzEyNWY0YjEtMGNmMy00MmNkLWE3MGYtOWRkMjZmNjg1ZWMwnMF_21ukS1eGBMvkOfmoYtLW1ZmnDnQ7WdyY9aOynLj897CINblj3gx8K4kB3seETd5Z5GiMzy6xbM25Ik_SUg&
+expires_in=3600&token_type=Bearer&state=716195036c014abaace6ff4b7e3df427&
+session_state=2710dbb0eb0e5c7cf7e28ef125e637ddb9124c9aa0e6d78047ac0fbc313da057.f9d7df278636a29a
+```
 
+Decoded id token
+
+Header
+```javascript
+{
+  "alg": "RS256",
+  "typ": "JWT",
+  "kid": "r1LkbBo3925Rb2ZFFrKyU3MVex9T2817Kx0vbi6i_Kc"
+}
+```
+
+Payload
+```javascript
+{
+  "sub": "5ab918f2044254ccb3623444",
+  "email": "admin@basaas.com",
+  "nonce": "ea0da03dddf7453f9ad1e3c01c01df2e",
+  "sid": "e09b267a-096b-4ac1-8660-5547679a6bf4",
+  "at_hash": "4BN-XOTvW7mHdCRwS93jIQ",
+  "s_hash": "LcwXmsD3Yom4oftfK2lIqQ",
+  "aud": "react",
+  "exp": 1523285992,
+  "iat": 1523282392,
+  "iss": "http://localhost:3002"
+}
+```
+
+(E*) After the signature of id token has been verified or userinfo has been obtained(http://openid.net/specs/openid-connect-core-1_0.html#UserInfo), the User authentication succeeded.
+
+
+This authentication flow brings several benefits. It relies on established standards, so an implementation will be covered by detailed documentation. In addition, Users get an interface that should already be known to them, since large providers (e. g. maintained by Google or Facebook) have been around for a couple of years.
