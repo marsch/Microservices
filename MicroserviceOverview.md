@@ -1,7 +1,7 @@
 # Microservice Overview
 ## Integration Framework Microservices
 |Microservice Name|Belong To|Responsibility|Official Deadline|Current Overall Status|Current Overall Description Status|Current Development Status|Additional Information|Link to documentation|
-|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|
 |Integration Framework API|Integration Framework and Smart Data Framework|Elastic.io GmbH|31.03.2018||Initial|||- [OIH APIs](/OihAPIs/README.md)|
 |Secure-Key-Management|Integration Framework|Elastic.io GmbH|30.06.2019||Initial|||- [Secure-Key-Management](/SecureAccessControl/SecureKeyManagement.md)|
 |Integration Component (Adapter) Repository|Integration Framework|Elastic.io GmbH|31.03.2019||Initial|||- [IntegrationComponentRepository](/RepositoryManagement/IntegrationComponentRepository.md)|
@@ -17,7 +17,7 @@
 
 ## Smart Data Framework Microservices
 |Microservice Name|Belong To|Responsibility|Official Deadline|Current Overall Status|Current Overall Description Status|Current Development Status|Additional Information|Link to documentation|
-|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|
 |Smart Data Framework API|Integration Framework and Smart Data Framework|Elastic.io GmbH|31.03.2018||Initial|||- [YAML file for swagger documentation](/SmartDataFramework/oih-sdf-api-0.0.1.yaml)|
 |Metadata Repository|Smart Data Framework|Elastic.io GmbH|30.06.2019||To be done||||
 |Master Data Repository|Smart Data Framework|Elastic.io GmbH|30.06.2018||To be done||||
