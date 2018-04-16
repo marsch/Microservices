@@ -28,7 +28,7 @@ The following illustration shows how the microservices are aggregated within the
 
 #### Folders
 
-- `Management Services`: Contains the architectural logging and monitoring concept
+- `ManagementServices`: Contains the architectural logging and monitoring concept
 - `MessageProcessing`: Includes all descriptions regarding message processing, communication router, scheduler and the                        resource coordinator
 - `OihAPIs`: Describes the REST-APIs for the Basaas Master Service Account, which allows corresponding  managing of the OIH platform
 - `RepositoryManagement`: Contains the Integration Component- and Content Repository descriptions, additionally, the evaluation of these are summarized, including the purpose, requirements, concept and technologies used
