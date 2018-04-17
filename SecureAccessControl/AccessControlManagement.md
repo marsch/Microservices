@@ -117,7 +117,7 @@ Following ressource require a sophisticated access control:
 	* _Can be used by other organizations if set to public_
 
 
-[IMG] TODO
+![OIH resources](./Assets/oih-resources-access.png)
 
 
 ## OIH Roles
@@ -172,9 +172,9 @@ Privileges:
 
 We prefer this approach because it combines the advatanges of both RBAC and ABAC. This is elaborated in more detail in following papers [Attributes Enhanced Role-Based Access Control Model](http://orbit.dtu.dk/files/110988163/AERBAC_TrustBus_20150618_.pdf) and [Adding Attributes to Role-Based Access Control](https://csrc.nist.gov/publications/detail/journal-article/2010/adding-attributes-to-role-based-access-control)
 
-Inspired by the library [accesscontrol](https://github.com/onury/accesscontrol), the main idea is to allow roles, which can be inherited and enhanced through attributes.
+Inspired by the library [accesscontrol](https://github.com/onury/accesscontrol), the main idea is to allow roles, which can use inheritance and can additionally be enhanced through attributes.
 
-Example code, inspired by :
+Example code:
 
 ```javascript
 
@@ -200,7 +200,7 @@ console.log(permission.attributes); // —> ['*'] (all attributes)
 ```
 
 The upper example only covers permission checks when accessing a resource.
-
+Ideally, roles and thus RBAC would suffice, but using only RBAC could limit us in the future if new roles with overlapping permissions are introduced.
 
 
  

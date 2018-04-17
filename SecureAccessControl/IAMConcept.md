@@ -233,6 +233,7 @@ Flow:
     2.  or make a request to the authorization service, which maps all authorization policies
 
 **TODO** > Our preferred version ist the use of middleware for authorization and a model which allows adding attriibute based access control (ABAC) to role based (RBAC). 
+Our preferred version ist the use of middleware for authorization and a model which allows adding attriibute based access control (ABAC) to role based (RBAC). See the AccessControl documentation for more details.
 
 The validation of JWT can be done by the Gateway, but also by any service/module, which has access to the JWS public key of the AuthService. 
 
