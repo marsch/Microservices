@@ -1,36 +1,53 @@
-# Introduction
+# Microservices
 
 ## Table of Content
-- [General Information](#general-information)
-  - [Manager](#manager)
-  - [Commiters](#committers)
-  - [Contributors](#contributors)
-- [Workgroup Member](#workgroup-member)
+- [Introduction](#introduction)
 
-- [Workgroup Content](#workgroup-content)
+- [Content](#content)
+  - [Folders](#folders)
+  - [Documents](#documents)
+
+- [Workgroup](#workgroup)
+  - [Information](#information)
+  - [Member](#member)
+
+- [Wording](#wording)
 
 - [Contribution](#contribution)
 
-## General Information
+## Introduction
+
+This repository contains all developing tasks considering the finalisation of the OIH api integration platform prototype,  including the
+core components "Integration Services" and "Data Hub".  Additionally, this repository includes the development of the microservices and the primary purpose is to develop the platform prototype as the basis for further use.
+
+## Content
+
+The following illustration shows how the microservices are aggregated within the workgroups:
+
+![Microservice Workgroups](https://github.com/openintegrationhub/Microservices/blob/master/Assets/OIHWorkgroupContent.png)
+
+#### Folders
+
+- `ManagementServices`: Contains all concepts for management services such as logging and monitoring, reporting and analytics
+- `MessageProcessing`: Includes all descriptions regarding message processing, communication router, scheduler and the                        resource coordinator
+- `OihAPIs`: Describes the Open Integration Hub REST-APIs i.e. integration framework api and smart data framework api, which allows corresponding  managing of the OIH platform
+- `RepositoryManagement`: Contains all repository service concepts such as Integration Component- and Content Repository
+- `SecureAccessControl`: Includes microservices to manage secure access. This includes the Identity-, User- and Secure-Key-Management
+
+#### Documents
+
+- `CONTRIBUTING`: Contains the contribution guideline
+- `DataHub`: Describes the concept of the smart data framework, using adapters/ transformer and a smart data framework adapter
+- `IntegrationServices`: Includes an overview of the intergration framework services as well as a short description for each microservice. It describes the integration into the kubernetes environment with message oriented middleware as the basis for communication
+
+## Workgroup
+#### Information
 - Each workgroup has at least one **status call** every two weeks
 - **Every Committer** must attend the status call
+- The governance model defines the workgroup members' roles into managers, committers or contributors
 
-### Manager
-- Each workgroup has one manager - this manager is elected every 6 month by all Committers within the workgroup (re-election possible)
-- The manager moderates discussions, documents decisions and coordinates activities, content and appointments
-- Only the manager is allowed to merge content into the master branch
-- Is part of one of the comittees
 
-### Committers
-- Decisions within a workgroup are made by the Committers on democratic basis (unanimity)
-- Committers can chosse which contributors shall become committers (Committees have to agree on choice)
-- Need to actively contribute to the workgroup
-
-### Contributors
-- Contributors contribute to the projects but do not have a vote
-- Contributors can apply to get a vote and become a Committer
-
-## Workgroup Member
+#### Member
 
 **Workgroup overarching manager:** Igor Drobiazko
 
@@ -71,11 +88,9 @@
 |  | Falk  | Contributor  |
 |  | Hans  | Contributor  |
 
-## Workgroup Content
+## Wording
 
-The following illustrations show how the microservices are aggregated within the workgroups.
-
-![Microservice Workgroups](https://github.com/openintegrationhub/Microservices/blob/master/Assets/OIH%20Workgroups.png)
+Within the project different terms and abbreviations are frequently used. All terms and abbrevations are explained within the [glossary](https://github.com/openintegrationhub/Connectors/wiki/Glossary) and our [list of abbrevations](https://github.com/openintegrationhub/Connectors/wiki/Abbreviations).
 
 ## Contribution
 
