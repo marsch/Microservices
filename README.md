@@ -28,17 +28,17 @@ The following illustration shows how the microservices are aggregated within the
 
 #### Folders
 
-- `ManagementServices`: Contains the architectural logging and monitoring concept
+- `ManagementServices`: Contains all concepts for management services such as logging and monitoring, reporting and analytics
 - `MessageProcessing`: Includes all descriptions regarding message processing, communication router, scheduler and the                        resource coordinator
-- `OihAPIs`: Describes the REST-APIs for the Basaas Master Service Account, which allows corresponding  managing of the OIH platform
-- `RepositoryManagement`: Contains the Integration Component- and Content Repository descriptions, additionally, the evaluation of these are summarized, including the purpose, requirements, concept and technologies used
-- `SecureAccessControl`: Includes the Identity-, User- and Secure-Key-Management for managing the credentials
+- `OihAPIs`: Describes the Open Integration Hub REST-APIs i.e. integration framework api and smart data framework api, which allows corresponding  managing of the OIH platform
+- `RepositoryManagement`: Contains all repository service concepts such as Integration Component- and Content Repository
+- `SecureAccessControl`: Includes microservices to manage secure access. This includes the Identity-, User- and Secure-Key-Management
 
 #### Documents
 
 - `CONTRIBUTING`: Contains the contribution guideline
-- `DataHub`: Describes the data flow from a source adapter to a target adapter, crossing the transformer in the middle to transform the data so it is possible to use a peer-to-peer integration
-- `IntegrationServices`: Includes all hub micro-services and their integration into the kubernetes environment with message oriented middleware as the basis for communication
+- `DataHub`: Describes the concept of the smart data framework, using adapters/ transformer and a smart data framework adapter
+- `IntegrationServices`: Includes an overview of the intergration framework services as well as a short description for each microservice. It describes the integration into the kubernetes environment with message oriented middleware as the basis for communication
 
 ## Workgroup
 #### Information
