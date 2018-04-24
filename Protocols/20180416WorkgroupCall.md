@@ -9,7 +9,7 @@
   - Dedicated server for authentication & user management
 - Swagger documentation will be provided for the (micro-)services
 - Authorization is currently missing
-  - Suggestion is to use [attribute based access control](../SecureAccessControl/AccessControlManagement.md#attribute-based-access-control)
+  - Suggestion is to use [attribute enhanced role based access control](../SecureAccessControl/AccessControlManagement.md#attribute-based-access-control)
   - For the first draft existing roles by _elastic.io_ will be used
   - Roles will possibly be extended by further roles
   - Roles will be used as a set of attributes
