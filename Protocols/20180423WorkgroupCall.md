@@ -5,9 +5,10 @@
 ## Status update
 ### Basaas
 
+- No new updates (since last update was on friday 20.04)
 
 ### Elastic.io
-- No new
+- No new updates (since last update was on friday 20.04)
 
 ### Wice
 - Adjusted Integration Content Repository description to template structure
