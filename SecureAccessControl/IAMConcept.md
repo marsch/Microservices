@@ -22,11 +22,14 @@ Throughout this document, we will also look into different setups and approaches
 Technologies used
 =================
 
-[JWT](https://jwt.io/)
+**[JWT](https://jwt.io/)**
+JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed. JWTs can be signed using a secret (with the HMAC algorithm) or a public/private key pair using RSA. See [JWT Introduction](https://jwt.io/introduction/) for more details.
 
-[OpenId Connect](http://openid.net/connect/)
+**[OAuth 2.0](https://oauth.net/2/)**
+OAuth 2.0 is the industry-standard protocol for authorization.
 
-[OAuth 2.0](https://oauth.net/2/)
+**[OpenId Connect](http://openid.net/connect/)**
+OpenID Connect is a simple identity layer on top of the OAuth 2.0 protocol, which allows computing clients to verify the identity of an end-user based on the authentication performed by an authorization server, as well as to obtain basic profile information about the end-user in an interoperable and REST-like manner.
 
   
 
@@ -65,7 +68,7 @@ In a more advanced approach, one could use LDAP or Active Directory as an identi
 Authorization and Roles
 -----------------------
 
-The precise role definitions of OIH may change at a later stage, for the sake of simplicity, we will use the current state of roles and privileges of elastic.io platform, which are _Admin_, _Organization-User_ and _Organization-Admin_.
+The precise role definitions of OIH may change at a later stage, for the sake of simplicity, we will use the current state of roles and privileges of elastic.io platform, which are _Admin_, _Organization-Guest_ and _Organization-Admin_.
 
 *   A user can be part of more than one organization and can have different roles in each of her organizations
 *   An Admin can manage organizations
@@ -229,9 +232,15 @@ Flow:
     1.  a middleware/library to verify that the client is authorized to access the ressource (business logic within credentials service)
     2.  or make a request to the authorization service, which maps all authorization policies
 
-**TODO** > Our preferred version ist the use of middleware for authorization and an attriibute based access control (ABAC). 
+**TODO** > Our preferred version ist the use of middleware for authorization and a model which allows adding attriibute based access control (ABAC) to role based (RBAC). 
+Our preferred version ist the use of middleware for authorization and a model which allows adding attriibute based access control (ABAC) to role based (RBAC). See the AccessControl documentation for more details.
 
 The validation of JWT can be done by the Gateway, but also by any service/module, which has access to the JWS public key of the AuthService. 
+
+### Authentication/Authorization Middleware
+The authentication middleware is a depedency, e.g. node module, which can be used by any (micro)-service, in order to validate the JWT. For this, the middleware would only require the endpoint uri of the AuthService to fetch the public JWS key. This can be done on startup of the service and be automatically refreshed with a configurable TTL.
+
+**TODO** > Define a scenario with rotating public keys and a fault tolerant approach, to refresh the public key on-demand.
 
 ### Authorization
 
