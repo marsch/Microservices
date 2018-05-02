@@ -19,11 +19,11 @@
 |Microservice Name|Responsibility|Official Deadline|Current Overall Status|Additional Information|Link to documentation|
 |---|---|---|---|---|---|
 |Smart Data Framework API|Elastic.io GmbH|31.03.2018|**Description:** Initial <br> **Development:** -||- [YAML file for swagger documentation](/SmartDataFramework/oih-sdf-api-0.0.1.yaml)|
-|Metadata Repository|Elastic.io GmbH|30.06.2019|**Description:** Initial <br> **Development:** -|||
-|Master Data Repository|Elastic.io GmbH|30.06.2018|**Description:** Initial <br> **Development:** -|||
-|Secure Attachement Storage|Elastic.io GmbH|31.12.2018|**Description:** Initial <br> **Development:** -|||
-|Hierarchy and Relationship Management|Wice GmbH|30.06.2019|**Description:** Initial <br> **Development:** -|||
-|Notification and Event Bus|Wice GmbH|30.06.2018|**Description:** Initial <br> **Development:** -|||
+|Metadata Repository|Elastic.io GmbH|30.06.2019|**Description:** - <br> **Development:** -|||
+|Master Data Repository|Elastic.io GmbH|30.06.2018|**Description:** - <br> **Development:** -|||
+|Secure Attachement Storage|Elastic.io GmbH|31.12.2018|**Description:** - <br> **Development:** -|||
+|Hierarchy and Relationship Management|Wice GmbH|30.06.2019|**Description:** - <br> **Development:** -|||
+|Notification and Event Bus|Wice GmbH|30.06.2018|**Description:** - <br> **Development:** -|||
 |CRUD Monitoring|Wice GmbH|31.12.2018|**Description:** Initial <br> **Development:** -|||
-|Konflikt-Management|Wice GmbH|30.06.2019|**Description:** Initial <br> **Development:** -|||
-|Reporting and Analytics APIs|Basaas GmbH|30.06.2019|**Description:** Initial <br> **Development:** -|||
+|Konflikt-Management|Wice GmbH|30.06.2019|**Description:** - <br> **Development:** -|||
+|Reporting and Analytics APIs|Basaas GmbH|30.06.2019|**Description:** - <br> **Development:** -|||
