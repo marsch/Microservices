@@ -31,10 +31,10 @@ The microservice is functioning as a log relay. The system must transport these 
 
 Logstash extracts the monitored data with event processing. This process consists of three stages: Input, then filtering and at last the output.
 
-In the input stage Logstash gets the data from the source. Upon receiving events from an input, Logstash performs an action based on the conditional filter, which means it will transformed from unstructured to structured data. In the output stage, the structured data is sent to multiple outputs.
+In the input stage Logstash gets the data from the source. Upon receiving events from an input, Logstash performs an action based on the conditional filter, which means it will be transformed from unstructured to structured data. In the output stage, the structured data is sent to multiple outputs.
 
 With the conditional filtering within Logstash we will be able to inform other endpoints. Therefore we have do define the rules for filtering.
 
 The structured data can be sent to message processing services.
 
-In summary we will have an incoming queue with all the input from a message broker, this will transferred to Logstash and we will get an output to the messaging services.
+In summary we will have an incoming queue with all the input from a message broker, which will be transferred to Logstash and we will get an output to the messaging services.

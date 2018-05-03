@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="https://github.com/openintegrationhub/Microservices/blob/master/Assets/medium-oih-einzeilig-zentriert.jpg" alt="Sublime's custom image" width="400"/>
+</p>
+
+The revolution in data synchronization — the Open Integration Hub enables simple data synchronization between any software applications and thus accelerates digitalisation 
+
 # Microservices
 
 ## Table of Content
@@ -31,6 +37,7 @@ The following illustration shows how the microservices are aggregated within the
 - `ManagementServices`: Contains all concepts for management services such as logging and monitoring, reporting and analytics
 - `MessageProcessing`: Includes all descriptions regarding message processing, communication router, scheduler and the                        resource coordinator
 - `OihAPIs`: Describes the Open Integration Hub REST-APIs i.e. integration framework api and smart data framework api, which allows corresponding  managing of the OIH platform
+- `Protocols`: Collection of all taken protocols
 - `RepositoryManagement`: Contains all repository service concepts such as Integration Component- and Content Repository
 - `SecureAccessControl`: Includes microservices to manage secure access. This includes the Identity-, User- and Secure-Key-Management
 
@@ -38,7 +45,11 @@ The following illustration shows how the microservices are aggregated within the
 
 - `CONTRIBUTING`: Contains the contribution guideline
 - `DataHub`: Describes the concept of the smart data framework, using adapters/ transformer and a smart data framework adapter
+- `InfrastructureAndTechnologies`: Lists the technologies used in the OIH and the motivation behind them
 - `IntegrationServices`: Includes an overview of the intergration framework services as well as a short description for each microservice. It describes the integration into the kubernetes environment with message oriented middleware as the basis for communication
+- `MicroserviceDescriptionTemplate`: Gives a brief overview of what a microservice description should look like  
+- `MicroserviceOverview`: Table of all integration framework microservices with their company in charge and the official deadline
+- `TestingTools`: Table of possible testing tools with their main feautures
 
 ## Workgroup
 #### Information
