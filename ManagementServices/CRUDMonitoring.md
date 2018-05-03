@@ -11,7 +11,7 @@ This microservice is part of the integration services of the Open Integration Hu
 
 This microservice is part of the "Smart Data Framework Services". With the "CRUD Monitoring" the baseline operations create, read, update and delete will be supervised.
 
-## Requirements for the Integration Content Repository
+## Requirements for the CRUD Monitoring
 
 Within the Open Integration Hub we have to consider how we are fulfilling the following tasks:
 
@@ -25,7 +25,7 @@ The microservice CRUD Monitoring works inside the "Smart Data Framework" as a ki
 
 For monitoring the crud operations we consider to use "Logstash". Logstash is a tool to collect, parse and store logs and events. It reads the logs via so called inputs, parses, aggregates and filters with the help of filters and stores by outputs.
 
-# Concept of the Integration Content Repository
+# Concept of the CRUD Monitoring
 
 The microservice is functioning as a log relay. The system must transport these logs and save them reliably and effectively to ensure that no data is lost. The storage system should allow the possibility of scaling out when there is a need for storing large volumes of data.
 
