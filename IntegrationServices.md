@@ -1,6 +1,6 @@
 # Integration Hub Micro-Services
 
-![Integration Hub Microservices](Assets/IntegrationHubMicroservices.png)
+![Integration Hub Microservices](Assets/MicroservicesFull.png)
 
 
 ## Integration Component (Adapter) Repository
