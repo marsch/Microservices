@@ -24,6 +24,6 @@
 |Secure Attachement Storage|Elastic.io GmbH|31.12.2018|**Description:** - <br> **Development:** -|||
 |Hierarchy and Relationship Management|Wice GmbH|30.06.2019|**Description:** - <br> **Development:** -|||
 |Notification and Event Bus|Wice GmbH|30.06.2018|**Description:** - <br> **Development:** -|||
-|CRUD Monitoring|Wice GmbH|31.12.2018|**Description:** Initial <br> **Development:** -||ManagementServices/CRUDMonitoring.md|
+|CRUD Monitoring|Wice GmbH|31.12.2018|**Description:** Initial <br> **Development:** -||- [CRUD Monitoring](ManagementServices/CRUDMonitoring.md)|
 |Konflikt-Management|Wice GmbH|30.06.2019|**Description:** - <br> **Development:** -|||
 |Reporting and Analytics APIs|Basaas GmbH|30.06.2019|**Description:** - <br> **Development:** -|||
