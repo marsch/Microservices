@@ -1,3 +1,11 @@
+<p align="center">
+  <img src="https://github.com/openintegrationhub/Microservices/blob/master/Assets/medium-oih-einzeilig-zentriert.jpg" alt="Sublime's custom image" width="400"/>
+</p>
+
+The revolution in data synchronization — the Open Integration Hub enables simple data synchronization between any software applications and thus accelerates digitalisation
+
+Visit the official [Open Integration Hub homepage](https://www.openintegrationhub.de/)
+
 # Microservices
 
 ## Table of Content
@@ -54,7 +62,7 @@ When looking for further information or support, please contact: philipp.hoegner
 
 The following illustration shows how the microservices are aggregated within the workgroups:
 
-![Microservice Workgroups](Assets/MicroserviceCluster.png)
+![Microservice Workgroups](Assets/MicroserviceClusters.png)
 
 ### Folders
 
