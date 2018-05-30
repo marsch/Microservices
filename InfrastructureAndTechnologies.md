@@ -31,6 +31,16 @@ Kubernetes also allows to setup and get started on all three major public cloud 
 OIH is not limited to Kubernetes, it is possible to setup the services on Marathon (DCOS/Mesos) or Docker Swarm as well. This will require a migration of Kubernetes configs to match with the system of choice. OIH is currently focused only on Kubernetes as the advantages overweigh.
 
 
+### Database and storage
+#### MongoDB
+The schema-less approach is advantageous if the data is heterogeneous, i.e. the items in the collection don’t all have the same structure, for example because:
+• there are many different types of objects, and it is not practical to put each type of object in its own table
+• the structure of the data is determined by external systems, over which you have no control, and which may change at any time
+MongoDB also has a great scalability allowing very large datasets or very high read/write throughputs.
+
+The future release of MongoDB 4.0 should also provide ACID guarantees through multi-document transaction support.
+
+
 ### Messagin Queue
 #### RabbitMQ
 
