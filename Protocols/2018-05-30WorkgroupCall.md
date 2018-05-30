@@ -2,6 +2,9 @@
 **Attendees**: Selim, Hansjörg, Philipp <br>
 **Absent**:  Igor
 
+## Readme
+- New readme structure should include overview picture of microservices and short description of each microservice
+
 ## Status update
 ### Basaas
 - Rights management is similiar to the Elastic.io model
