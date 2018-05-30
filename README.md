@@ -123,6 +123,12 @@ steps of that flow. However an integration flow does not define how to connect t
 can be considered as a clonable template that must not contain any sensible user data, such as API credentials. The API
 credentials are stored in the secure-key-management (s. [SecureAccessControl/SecureKeyManagement](SecureAccessControl/SecureKeyManagement.md)).
 
+### Identity and Access Management
+
+Identity and Access Management (short: IAM) is one of the core components in OIH which is needed to provide a secure authentication and authorization of users/clients. The IAM Service can be configured to use JWT tokens with HMAC or RSA. It has also support for OpenId Connect.
+(s. [IAM Concept](SecureAccessControl/IAMConcept.md))
+
+
 ### Integration Content Repository
 TBD... See [/RepositoryManagement/IntegrationContentRepository](/RepositoryManagement/IntegrationContentRepository.md)
 
