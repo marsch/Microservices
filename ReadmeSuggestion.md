@@ -85,7 +85,7 @@ The following illustration shows how the microservices are aggregated within the
 
 ## Microservice Overview
 
-![Open Integration Hub Microservices](Assets/MicroservicesFull.png)
+![Open Integration Hub Microservices](Assets/Microservicesv3.png)
 
 
 ### Integration Component (Adapter) Repository
