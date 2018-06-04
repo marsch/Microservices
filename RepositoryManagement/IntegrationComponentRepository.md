@@ -1,7 +1,32 @@
-# Integration Component Repository
+
+---
+
+**Creator:** Igor (drobiazko), Elastic.io <br>
+**Last revised by:** Philipp (philecs), Cloud Ecosystem <br>
+**Last update:** 04-06-2018
+
+---
+
+# Introduction
+
+The integration component repository is needed to store integration components such as adapters & transformer.
+
+# Description
+
+The documents shorty describes integration components and how they are stored, retreived and managed.
+
+# Technologies used
+
+- Docker Registry
+
+## Reasoning
+
+- Docker Registry: Stateless, highly scalable storage for Docker images
+
+# Conceptional Elaborations
 
 The integration components are lightweight and stand-alone Docker images that include everything needed to run the
-component, including the component's code, a runtime, libraries and dependencies. Each component is based on an OIH
+component, including the component's code, a runtime, libraries and dependencies. Each component is based on an Open Integration Hub
 [parent image](https://docs.docker.com/engine/userguide/eng-image/baseimages/) which provides the component runtime.
 For example, for Java component the parent images provides the JDK and for Node.js component the parent image provides
 [NPM](https://www.npmjs.com/) and [Node.js](https://nodejs.org).

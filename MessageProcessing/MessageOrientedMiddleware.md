@@ -1,4 +1,30 @@
-# Message Oriented Middleware
+
+---
+
+**Creator:** Igor (drobiazko), Elastic.io <br>
+**Last revised by:** Philipp (philecs), Cloud Ecosystem <br>
+**Last update:** 04-06-2018
+
+---
+
+# Introduction
+
+The message oriented middleware is a central part of the Open Integration Hub and is needed to store and route messages while transferring them from senders to receivers.
+
+# Description
+
+The documents describes an integration flow and how two steps are connected via a message oriented middleware.
+
+# Technologies used
+
+- RabbitMQ
+
+## Reasoning
+
+RabbitMQ can handle more than 1M messages per second. Additionally to that, Organizations in XPC are not communicating with each other, which gives us a perfect case for horizontal scalability - we deploy multiple RabbitMQ instances to handle load linearly.
+
+# Conceptional Elaborations
+
 
 An integration flow is represented by a directed acyclic graph in which
 nodes are represented by integration components communicating with a
@@ -11,7 +37,7 @@ communicate which each other through a messaging queue, such as [RabbitMQ](https
 The following diagram displays an example of an integration flow using
 a message broker.
 
-![Message Oriented Middleware](Assets/MessageOrientedMiddleware1.png)
+![Message Oriented Middleware](Assets/MessageOrientedMiddleware.png)
 
 In the diagram above `Step 1` is a trigger component producing data by
 polling an API periodically. The produced messages are sent to a queue
