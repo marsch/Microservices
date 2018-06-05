@@ -1,4 +1,30 @@
-# Logging & Monitoring
+
+---
+
+**Creator:** Igor (drobiazko), Elastic.io <br>
+**Last revised by:** Philipp (philecs), Cloud Ecosystem <br>
+**Last update:** 04-06-2018
+
+---
+
+# Introduction
+
+Logging & Monitoring is needed to monitor the status of the other services (e.g. to perform health checks).
+
+# Description
+
+The document describes the logging mechanisms provided by Kubernetes and how the the logging agent is implemented.
+
+# Technologies used
+
+- Kubernetes
+- Tbd (Stackdriver / Elasticsearch)
+
+## Reasoning
+
+- Tbd
+
+# Conceptional Elaborations
 
 Under the hood of the Integration Hub is a Kubernetes cluster used to run
 all the Docker containers of internal micro-services and all the integration
@@ -24,5 +50,3 @@ to deploy Fluentd as DaemonSet to gather all the logs from all the applications
 on all Kubernetes nodes.
 
 The Fluentd DaemonSet can be configured to send the logs to [Elasticsearch](https://www.elastic.co/)
-
-
