@@ -40,7 +40,7 @@
 - [x] Review CRUD Monitoring documentation **Selim**
 - [x] Extend [infrastructure and technology](https://github.com/openintegrationhub/Microservices/blob/master/InfrastructureAndTechnologies.md) description by MongoDB part **Selim**
 - [ ] Collect operations that need to be provided by the Smart Data Framework API within the [OIH API](https://github.com/openintegrationhub/Microservices/tree/master/OihAPIs) description (See protocol from: [16.05.2018](https://github.com/openintegrationhub/Microservices/blob/master/Protocols/2018-05-16WorkgroupCall.md)) **Selim**
-- [ ] Provide short description for IAM for README page of Microservice Repository (See protocol from: [16.05.2018](https://github.com/openintegrationhub/Microservices/blob/master/Protocols/2018-05-16WorkgroupCall.md)) **Selim**
+- [x] Provide short description for IAM for README page of Microservice Repository (See protocol from: [16.05.2018](https://github.com/openintegrationhub/Microservices/blob/master/Protocols/2018-05-16WorkgroupCall.md)) **Selim**
 
 ## Elastic.io
 ### Open Tasks from last Call:
