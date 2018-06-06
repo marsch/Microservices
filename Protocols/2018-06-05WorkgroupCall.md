@@ -34,11 +34,9 @@
 
 # Status update
 ## Basaas
-### Open Tasks from last Call:
 - API Documentation: [Swagger Doku](https://account.basaasdev.de/api-docs/ )
 
 ## Wice
-### Open Tasks from last Call:
 #### Content Integration Repository
 * Wice will document their current state until 08.06.2018
 * The service is being developed in Node.js and a Swagger API documentation will be provided
