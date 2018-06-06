@@ -22,42 +22,31 @@
 
 ---
 
-# Status MVP
-- What is the status of the MVP? Can it be published this week as announced within the last [workgroup call](https://github.com/openintegrationhub/Microservices/blob/master/Protocols/2018-05-16WorkgroupCall.md#elasticio)?
+# Status MVP - Status Elastic.io
+* Elastic has finalized the implementation of MVP
+   * Igor is going to test this implementation until Friday (08.06.2018) and, if there are no issues, commit/publish the code on Github
+
+# Microservice APIs
+* Franz: To achieve a loosely coupled communication between microservices, the idea of an ESB (message bus) should be evaluated
 
 # Description Review
-- Philipp adjusted the microservice descriptions by elastic.io to the microservice description template. Review is needed. See:
-  - [CommunicationRouter](https://github.com/openintegrationhub/Microservices/blob/master/MessageProcessing/CommunicationRouter.md)
-  - [MessageOrientedMiddleware](https://github.com/openintegrationhub/Microservices/blob/master/MessageProcessing/MessageOrientedMiddleware.md)
-  - [SchedulerResourceCoordinator](https://github.com/openintegrationhub/Microservices/blob/master/MessageProcessing/SchedulerResourceCoordinator.md)
-  - [SecureKeyManagement](https://github.com/openintegrationhub/Microservices/blob/master/SecureAccessControl/SecureKeyManagement.md)
-  - [IntegrationComponentRepository](https://github.com/openintegrationhub/Microservices/blob/master/RepositoryManagement/IntegrationComponentRepository.md)
-  - [LoggingAndMonitoring](https://github.com/openintegrationhub/Microservices/blob/master/ManagementServices/LoggingMonitoring.md)
+* Everyone: will fill out the missing parts of the template
 
 # Status update
 ## Basaas
 ### Open Tasks from last Call:
-- [x] Review CRUD Monitoring documentation **Selim**
-- [x] Extend [infrastructure and technology](https://github.com/openintegrationhub/Microservices/blob/master/InfrastructureAndTechnologies.md) description by MongoDB part **Selim**
-- [ ] Collect operations that need to be provided by the Smart Data Framework API within the [OIH API](https://github.com/openintegrationhub/Microservices/tree/master/OihAPIs) description (See protocol from: [16.05.2018](https://github.com/openintegrationhub/Microservices/blob/master/Protocols/2018-05-16WorkgroupCall.md)) **Selim**
-- [x] Provide short description for IAM for README page of Microservice Repository (See protocol from: [16.05.2018](https://github.com/openintegrationhub/Microservices/blob/master/Protocols/2018-05-16WorkgroupCall.md)) **Selim**
-
-## Elastic.io
-### Open Tasks from last Call:
-- [ ] Review Swagger API by Basaas **Igor**
-- [ ] Review CRUD Monitoring documentation **Igor** + **Selim**
-- [ ] Extend [infrastructure and technology](https://github.com/openintegrationhub/Microservices/blob/master/InfrastructureAndTechnologies.md) description by RabbitMQ part **Igor**
-- [ ] Collect operations that need to be provided by the Smart Data Framework API within the [OIH API](https://github.com/openintegrationhub/Microservices/tree/master/OihAPIs) description (See protocol from: [16.05.2018](https://github.com/openintegrationhub/Microservices/blob/master/Protocols/2018-05-16WorkgroupCall.md)) **Igor**
+- API Documentation: [Swagger Doku](https://account.basaasdev.de/api-docs/ )
 
 ## Wice
 ### Open Tasks from last Call:
-- [ ] Collect operations that need to be provided by the Smart Data Framework API within the [OIH API](https://github.com/openintegrationhub/Microservices/tree/master/OihAPIs) description (See protocol from: [16.05.2018](https://github.com/openintegrationhub/Microservices/blob/master/Protocols/2018-05-16WorkgroupCall.md)) **Hansjörg**
-- [ ] Provide short description for Integration Content Repository for README page of Microservice Repository (See protocol from: [16.05.2018](https://github.com/openintegrationhub/Microservices/blob/master/Protocols/2018-05-16WorkgroupCall.md)) **Hansjörg**
+#### Content Integration Repository
+* Wice will document their current state until 08.06.2018
+* The service is being developed in Node.js and a Swagger API documentation will be provided
 
 # Organistory
-- Suggestion: Extend Microservice Call to at least 1 1/2 hours (if not 2 hours) so that architecture call follows right after it.
-  - Shorter cycles for topics which are discussed within the architecture group such as _OIH API_
-- Status update within the **committee call** on friday. A comparison of planned / current status has to be created for every workgroup.
+ * Working group accepts the proposal to append the Architecture Workgroup call as follow up to the microservices call on Wednesdays
 
 # Derived Tasks
-- [ ] Review adjusted microservice descriptions and add missing content. See issue: [Review adjusted descriptions](https://github.com/openintegrationhub/Microservices/blob/master/Protocols/2018-05-16WorkgroupCall.md#boards?repos=110119585) **Igor**
+- [ ] Review adjusted microservice descriptions and add missing content. See issue: [Review adjusted descriptions](https://github.com/openintegrationhub/Microservices/blob/master/Protocols/2018-05-16WorkgroupCall.md#boards?repos=110119585) **Igor, Hansjörg, Selim**
+- [ ] The working group should specify the criteria when to use REST and when to use the Message Queue
+- [ ] Franz will document the discussed ideas in the Architecture Decisions document
