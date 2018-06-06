@@ -1,5 +1,5 @@
 # Protocol
-**Attendees**: Selim, Igor, Hansjörg, Franz <br>
+**Attendees**: Selim, Igor, Hansjörg, Franz, Dennis <br>
 **Absent**: Philipp
 
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
@@ -57,6 +57,7 @@
 # Organistory
 - Suggestion: Extend Microservice Call to at least 1 1/2 hours (if not 2 hours) so that architecture call follows right after it.
   - Shorter cycles for topics which are discussed within the architecture group such as _OIH API_
+- Status update within the **committee call** on friday. A comparison of planned / current status has to be created for every workgroup.
 
 # Derived Tasks
 - [ ] Review adjusted microservice descriptions and add missing content. See issue: [Review adjusted descriptions](https://github.com/openintegrationhub/Microservices/blob/master/Protocols/2018-05-16WorkgroupCall.md#boards?repos=110119585) **Igor**
