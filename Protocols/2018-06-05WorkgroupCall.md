@@ -53,3 +53,4 @@
 - [ ] Review adjusted microservice descriptions and add missing content. See issue: [Review adjusted descriptions](https://github.com/openintegrationhub/Microservices/blob/master/Protocols/2018-05-16WorkgroupCall.md#boards?repos=110119585) **Igor, Hansjörg, Selim**
 - [ ] The working group should specify the criteria when to use REST and when to use the Message Queue
 - [ ] Franz will document the discussed ideas in the Architecture Decisions document
+- [ ] Modify the current Swagger draft Yaml of SDF API until 08.06.2018
