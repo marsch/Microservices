@@ -4,19 +4,19 @@
 
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-# Agenda
+# Topics
 
-- [Status MVP](#status-mvp)
+- [Status MVP - Status Elastic.io](#status-mvp---status-elasticio)
+- [Microservice APIs](#microservice-apis)
+- [SDF API discussion*](#sdf-api-discussion)
 - [Description Review](#description-review)
 - [Status update](#status-update)
 	- [Basaas](#basaas)
-		- [Open Tasks from last Call:](#open-tasks-from-last-call)
-	- [Elastic.io](#elasticio)
-		- [Open Tasks from last Call:](#open-tasks-from-last-call)
 	- [Wice](#wice)
-		- [Open Tasks from last Call:](#open-tasks-from-last-call)
+			- [Content Integration Repository](#content-integration-repository)
 - [Organistory](#organistory)
 - [Derived Tasks](#derived-tasks)
+
 
 <!-- /TOC -->
 
@@ -28,6 +28,11 @@
 
 # Microservice APIs
 * Franz: To achieve a loosely coupled communication between microservices, the idea of an ESB (message bus) should be evaluated
+
+# SDF API discussion*
+  * Franz: small services can be synchronous, but a chain of service calling other service should be designed in an asynchronous manner, e.g. a message is acknowledged synchronous and added to a queue. Other services can process the message async.
+   * Igor: Similar to Integration Framework one may need both world – synchronous (REST) as asynchronous (Queue). SDF can have a synchronous REST API, generate a transaction id and acknowledge the request. Internally, the data could be further transformed, de-duplicated, etc. fully asynchronous. The caller shouldn’t have to wait until the data is fully processed.
+   * REST-API: Igor will modify the current Swagger draft Yaml of SDF API until 08.06.2018. The working group will work out the SDF API on the basis of this draft.
 
 # Description Review
 * Everyone: will fill out the missing parts of the template
