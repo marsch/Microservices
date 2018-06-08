@@ -1,7 +1,7 @@
 # Microservice Overview
 
 ## OIH APIs
-**Workgroup Manager: Selim (Basaas)**
+**Workgroup Manager: Igor (Elastic.io)**
 
 |Framework|Microservice Name|Responsibility|Official Deadline|Current Overall Status|Link to documentation|
 |---|---|---|---|---|---|
@@ -9,7 +9,7 @@
 |Smart Data Framework|Smart Data Framework API|Elastic.io GmbH|31.03.2018|**Description:** Initial <br> **Development:** -|- [YAML file for swagger documentation](/SmartDataFramework/oih-sdf-api-0.0.1.yaml)|
 
 ## Secure Access Control
-**Workgroup Manager: Igor (Elastic.io)**
+**Workgroup Manager: Selim (Basaas)**
 
 |Framework|Microservice Name|Responsibility|Official Deadline|Current Overall Status|Link to documentation|
 |---|---|---|---|---|---|
