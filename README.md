@@ -35,7 +35,7 @@ Visit the official [Open Integration Hub homepage](https://www.openintegrationhu
 
 ## Introduction
 
-This repository contains all developing tasks considering the finalisation of the OIH api integration platform prototype,  including the
+This repository contains all developing tasks considering the finalisation of the Open Integration Hub prototype,  including the
 core components "Integration Services" and "Data Hub".  Additionally, this repository includes the development of the microservices and the primary purpose is to develop the platform prototype as the basis for further use.
 
 ## Contribution
