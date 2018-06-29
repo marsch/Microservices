@@ -6,7 +6,7 @@
 |Framework|Microservice Name|Responsibility|Official Deadline|Current Overall Status|Link to documentation|
 |---|---|---|---|---|---|
 |Integration Framework|Integration Framework API|Elastic.io GmbH|31.03.2018|**Description:** Initial <br> **Development:** -|- [OIH APIs](/OihAPIs/README.md)|
-|Smart Data Framework|Smart Data Framework API|Elastic.io GmbH|31.03.2018|**Description:** Initial <br> **Development:** -|- [YAML file for swagger documentation](/SmartDataFramework/oih-sdf-api-0.0.1.yaml)|
+|Smart Data Framework|Smart Data Framework API|Elastic.io GmbH|31.03.2018|**Description:** Initial <br> **Development:** [Published](https://github.com/openintegrationhub/Architecture/blob/master/SmartDataFramework/oih-sdf-api-0.0.2.js)|- [YAML file for swagger documentation](/SmartDataFramework/oih-sdf-api-0.0.1.yaml)|
 
 ## Secure Access Control
 **Workgroup Manager: Selim (Basaas)**
